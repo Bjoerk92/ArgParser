@@ -14,7 +14,7 @@
 #include <any>
 #include <iostream>
 
-class ArgHandler
+class ArgParser
 {
     private:
 
@@ -22,6 +22,12 @@ class ArgHandler
 
     public:
 
-    ArgHandler() = default;
-    ~ArgHandler() = default;
+    ArgParser() = default;
+    ~ArgParser() = default;
+
+    template<typename T>
+    void AddArgument(std::string Name, T type)
+    {
+        ArgMap.insert(Name, type);
+    }
 };
