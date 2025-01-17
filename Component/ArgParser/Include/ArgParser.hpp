@@ -20,14 +20,12 @@ class ArgParser
 
     std::map<std::string, std::any> ArgMap;
 
+
     public:
 
     ArgParser() = default;
     ~ArgParser() = default;
 
     template<typename T>
-    void AddArgument(std::string Name, T type)
-    {
-        ArgMap.insert(Name, type);
-    }
+    void AddArgument(std::string Name, T r);
 };

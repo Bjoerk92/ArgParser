@@ -8,3 +8,14 @@
  * @copyright Copyright (c) 2024
  * 
  */
+#include "ArgParser.hpp"
+int main(int argc, char** argv)
+{
+    ArgParser arg;
+
+
+
+
+
+    return 0;
+}
